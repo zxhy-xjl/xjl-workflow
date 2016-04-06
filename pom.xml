@@ -4,6 +4,7 @@
   <artifactId>xjl-workflow</artifactId>
   <version>0.0.1</version>
   <name>xjl-workflow</name>
+  <packaging>jar</packaging>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -76,6 +77,19 @@
   	<version>5.19.0.2</version>
   </dependency>
   </dependencies>
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>${file_encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<distributionManagement>
 	  <repository>
 	    <id>releases</id>
