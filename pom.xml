@@ -92,7 +92,7 @@
 	</build>
 	<distributionManagement>
 	  <repository>
-	    <id>releases</id>
+	    <id>user-releases</id>
 	    <url>http://139.196.174.28:8081/nexus/content/repositories/releases</url>
 	  </repository>
 	</distributionManagement>  
